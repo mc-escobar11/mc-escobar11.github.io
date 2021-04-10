@@ -1,106 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Maria Camila Escobar</title>
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-	<link rel="shortcut icon" href="favicon.ico">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Maria Escobar</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- FontAwesome JS-->
-	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-	<!-- Theme CSS -->
-	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.ico">
 
 </head>
 
-<body>
+<body id="top">
 
-	<div class="main-wrapper">
-		<div class="container px-3 px-lg-5">
-			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-				<div class="resume-header">
-					<div class="row align-items-center">
-						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
-							<h2 class="resume-name mb-0 text-uppercase">Maria C. Escobar</h2>
-							<div class="resume-tagline mb-3 mb-md-0">M.Sc. Student in Biomedical Engineering</div>
-						</div><!--//resume-title-->
-						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
-							<ul class="list-unstyled mb-0">
-								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:mc.escobar11@uniandes.edu.co">mc.escobar11@uniandes.edu.co</a></li>
-								<li class="mb-2"><i class="fas fa-book fa-fw fa-lg mr-2"></i><a class="resume-link" href="https://scholar.google.com/citations?user=xllzBlIAAAAJ&hl" target="_blank">Google Scholar</a></li>
-								<li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Bogotá, Colombia</li>
-							</ul>
-						</div><!--//resume-contact-->
-					</div><!--//row-->
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+	      
 
-				</div><!--//resume-header-->
-				<hr>
-				<div class="resume-intro py-3">
-					<div class="media flex-column flex-md-row align-items-center">
-						<img class="resume-profile-image mb-4 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="assets/images/resume-profile.png" alt="image">
-						<div class="media-body text-left">
-							<p class="mb-0">I am a Biomedical Engineer from Colombia. I am currently doing a M.Sc. in Biomedical Engineering at <a class="theme-link" href="https://ingbiomedica.uniandes.edu.co/index.php/es/" target="_blank">Universidad de los Andes</a>.  My main interests include artificial intelligence computer vision, data analytics and mathematical modelling. My goal is to use the tools I learn to create a bridge between medical practice and artificial intelligence. </p>
-						</div><!--//media-body-->
-					</div>
-				</div><!--//resume-intro-->
-				<hr>
-				<div class="resume-body">
-					<div class="row">
-						<div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
-							<section class="work-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Research Experience</h3>
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Biomedical Computer Vision</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Uniandes | 2018 - Present</div>
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Projects</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Activities</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>				
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-									</div>
-									<div class="item-content">
-										<p>I am a graduate research assistant of the <a target = '_blank' href='https://biomedicalcomputervision.uniandes.edu.co/index.php' class= 'theme-link'>Biomedical Computer Vision (BCV)</a> group at Uniandes,
-											led by prof.<a target = '_blank' href='https://scholar.google.com/citations?user=k0nZO90AAAAJ&hl=en' class= 'theme-link'> Pablo Arbeláez</a>. In our group we work not only on medical images but also on current
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			
+	   			<h1>Maria C. Escobar.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Biomedical Engineer</span>
+	   				<span>PhD student of Engineering</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+			      <li><a href="https://github.com/mc-escobar11" target="_blank"><i class="fa fa-github"></i></a></li>
+			      <li><a href="https://linkedin.com/in/mc-escobar11" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			      <li><a href="https://scholar.google.com/citations?user=xllzBlIAAAAJ&hl" target="_blank"><i class="fa fa-google"></i></a></li>
+
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/me.jpeg" alt="Profile Picture">
+
+   				<p class="lead">I am a Biomedical Engineer from Colombia. I am currently a first-year PhD student of Engineering at Universidad de los Andes. My main interests include artificial intelligence and computer vision in health applications. My goal is to use the tools I learn to create a bridge between medical practice and artificial intelligence.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>I am currently seeking an internship or research opportunity that will allow me to further develop my abilities in the field of computer vision. </p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Maria Camila Escobar</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>September 25, 1998</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Researcher at <a href=https://cinfonia.uniandes.edu.co target="_blank">CINFONIA</a></span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>mc.escobar11@uniandes.edu.co</span>
+   				</li>
+   				<li>
+   					<strong>Languages:</strong>
+   					<span>Spanish (Native), English(C1), German(B1)</span>
+   				</li>
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>I am a goal-oriented teamworker with strong skills in written and oral communication. My areas of expertise are image generation and computer aided diagnosis. Below are highlights of my technical skills:</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Pytorch</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Python</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>Matlab</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>Java</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>Javascript</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
+   			<a href="images/CV_formal_MCEP.pdf" taget="_blank" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">Here is my work experience and education</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Researcher</h3>
+	   					<p>July 2018 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Center for Research and Formation in Artificial Intelligence</h4>
+										<p>Researcher of the <a target = '_blank' href='https://biomedicalcomputervision.uniandes.edu.co/index.php' class= 'theme-link'>Biomedical Computer Vision (BCV)</a> group at Uniandes,
+											led by prof.<a target = '_blank' href='https://scholar.google.com/citations?user=k0nZO90AAAAJ&hl=en' class= 'theme-link'> Pablo Arbeláez</a>. We work not only on medical images but also on current
 											topics in computer vision such as Natural Language Processing, Generative Adversarial Networks and Video. During my time in BCV I have learned to work on multidisciplinary teams, conduct
-											research projects and prepare paper submissions for international conferences. Some of my research areas are:</p>
+											research projects and prepare paper submissions for international conferences.</p>
+	   				</div>
 
-										<ul class="resume-list">
-											<li>Biomedical Imaging. </li>
-											<li>Generative Adversarial Networks.</li>
-										</ul>
-									</div>
-								</div><!--//item-->
+	   			</div> <!-- /timeline-block -->
 
-							</section><!--//work-section-->
-							<section class="work-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Work Experience</h3>
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Graduate Teaching Assistant</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Uniandes | 2019</div>
+	   			<div class="timeline-block">
 
-									</div>
-									<div class="item-content">
-										<p> Laboratory instructor.  I was in charge of designing laboratory activities regarding the use of basic computer vision tools for biomedical problems. I also had to assist and evaluate students in their final projects.</p>
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
 
-										<ul class="resume-list">
-											<li>Analysis and Processing of Biomedical Images(Jan 2019 - May 2019). </li>
-										</ul>
-									</div>
-								</div><!--//item-->
-								<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Undergraduate Teaching Assistant</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Uniandes | 2016 - 2018</div>
+	   				<div class="timeline-header">
+	   					<h3>Teaching Assistant</h3>
+	   					<p>Jan 2019 - June 2019</p>
+	   				</div>
 
-									</div>
-									<div class="item-content">
+	   				<div class="timeline-content">
+	   					<h4>Uniandes - Analysis and Processing of Biomedical Images</h4>
+	   					<p> Laboratory instructor.  I was in charge of designing laboratory activities regarding the use of basic computer vision tools for biomedical problems. I also had to assist and evaluate students in their final projects.</p>
+
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Undergrad teaching assistant</h3>
+	   					<p>Aug 2016 - May 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Uniandes</h4>
 										<p> In charge of designing interactive material for lectures, creating and grading midterms, modifying lab guides, assisting students during lab sessions and grading homeworks.</p>
 
 										<ul class="resume-list">
@@ -109,156 +278,485 @@
 											<li>Probability and Statistics I (Aug 2017 - Dec 2017).</li>
 											<li>Algorithmic and Object-Oriented Programming I (Aug 2016 - Dec 2016).</li>
 										</ul>
-									</div>
-							</section><!--//work-section-->
+	   				</div>
 
-							<section class="project-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Projects</h3>
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Hand Pose Estimation for Bone Age Assessment</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">2018</div>
+	   			</div> <!-- /timeline-block -->
 
-									</div>
-									<div class="item-content">
-										<p>The idea behind this project is to develop an automated method that can predict Bone Age based on the hand radiograph of a child.
-										 This is relevant because Bone Age Assessment (BAA) is a critical factor for determining delayed development in children, which can be a sign of various pathologies.
-										 We developed the <a target ='_blank' href="http://marr.uniandes.edu.co/BAAR" class="theme-link">Bone Age Assessment Resources (BAAR)</a> as a tool to help researchers create new methods for BAA by exploiting anatomical information.
-										 We also created <a target ='_blank' href="https://github.com/BCV-Uniandes/Bonet" class="theme-link">BoNet</a>, a novel neural network method for BAA that outperforms the previous state-of-the-art.
-										 Our paper titled "Hand Pose Estimation for Pediatric Bone Age Assessment" was accepted as an oral presentation at the  Medical Image Computing and Computer Assisted
-										  Intervention conference <b>(MICCAI 2019)</b> in Shenzen, China.
-										</p>
+   			</div> <!-- /timeline-wrap -->   			
 
-									</div>
-								</div><!--//item-->
-							</section><!--//project-section-->
-							<section class="project-section py-3">
-									<h3 class="text-uppercase resume-section-heading mb-4">Other</h3>
-									<div class="item mb-3">
-										<div class="item-heading row align-items-center mb-2">
-											<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Salsa Uniandes</h4>
-											<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">2016</div>
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
 
-										</div>
-										<div class="item-content">
-											<p>Member of Salsa Uniandes since January of 2016. We are a student group at Uniandes dedicated to
-												finding alternative spaces for expressing ourselves through dance. We give free workshops of Latin
-												rythms every week for the entire university and several presentations
-												 every semester. We are very commited towards the creation of a healthy environment at Uniandes.
-											</p>
+   		<div class="col-twelve resume-header">
 
-										</div>
-									</div><!--//item-->
-									<div class="item mb-3">
-											<div class="item-heading row align-items-center mb-2">
-												<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Con Las Manos</h4>
-												<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">2019</div>
+   			<h2>Education</h2>
 
-											</div>
-											<div class="item-content">
-												<p>Volunteer at "Con Las Manos", a project created in 2013 at Uniandes with the aim of giving back
-													to a vulnerable community with the most powerful tool we all have: education. My role as a volunteer is to
-													teach 5th graders basic math through a problem based learning framework and socio-emotional abilities
-													through various interactive projects. I also work on the Operations area, we are in charge of the logistics
-													behind everything that goes on in the organization.
-												</p>
+   		</div> <!-- /resume-header -->
 
-											</div>
-										</div><!--//item-->
-								</section><!--//extra-section-->
-						</div><!--//resume-main-->
-						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
-							<section class="skills-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
-								<div class="item">
-									<h4 class="item-title">Technical</h4>
-									<ul class="list-unstyled resume-skills-list">
-										<li class="mb-2">Python</li>
-										<li class="mb-2">Java<li>
-											<li class="mb-2">Javascript</li>
-											<li class="mb-2">Matlab</li>
-											<li class="mb-2">Pytorch</li>
-										</ul>
-									</div><!--//item-->
-									<div class="item">
-										<h4 class="item-title">Professional</h4>
-										<ul class="list-unstyled resume-skills-list">
-											<li class="mb-2">Effective oral and written communication</li>
-											<li class="mb-2">Teamwork and leadership<li>
-												<li class="mb-2">Problem solving</li>
-												<li>Design and management of projects in Engineering</li>
-											</ul>
-										</div><!--//item-->
-									</section><!--//skills-section-->
-									<section class="education-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
-										<ul class="list-unstyled resume-education-list">
-											<li class="mb-3">
-												<div class="resume-degree font-weight-bold">MSc in Biomedical Engineering</div>
-												<div class="resume-degree-org text-muted">Universidad de los Andes</div>
-												<div class="resume-degree-org text-muted">Focus: Biomedical Computer Vision</div>
-												<div class="resume-degree-time text-muted">2019 - 2020</div>
-											</li>
-											<li>
-												<div class="resume-degree font-weight-bold">BSc in Biomedical Engineering</div>
-												<div class="resume-degree-org text-muted">Universidad de los Andes</div>
-												<div class="resume-degree-org text-muted">Minor studies: German Language and culture.</div>
-												<div class="resume-degree-time text-muted">2014 - 2018</div>
-											</li>
-										</ul>
-									</section><!--//education-section-->
-									<section class="education-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Awards</h3>
-										<ul class="list-unstyled resume-awards-list">
-											<li class="mb-3">
-												<div class="font-weight-bold">Best GPA </div>
-												<div class="text-muted">Best GPA among 45 graduating BME Students (2019)</div>
-											</li>
-											<li>
-												<div class="font-weight-bold">Coulter College Scholar</div>
-												<div class="text-muted">Biomedical Engineering Society and Medtronic (2018)</div>
-											</li>
-										</ul>
-									</section><!--//education-section-->
-									<section class="skills-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
-										<ul class="list-unstyled resume-lang-list">
-											<li>Spanish <span class="text-muted">(Native)</span></li>
-											<li>English <span class="text-muted">(C2)</span></li>
-											<li>German <span class="text-muted">(B1)</span></li>
-										</ul>
-									</section><!--//certificates-section-->
-									<section class="skills-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Interests</h3>
-										<ul class="list-unstyled resume-interests-list mb-0">
-											<li class="mb-2">Dancing</li>
-											<li class="mb-2">Reading</li>
-											<li class="mb-2">Travelling</li>
-										</ul>
-									</section><!--//certificates-section-->
+   		<div class="col-twelve">
 
-								</aside><!--//resume-aside-->
-							</div><!--//row-->
-						</div><!--//resume-body-->
-						<hr>
-						<div class="resume-footer text-center">
-							<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/mc-escobar11" target="_blank"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">Github</span></a></li>
-								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://linkedin.com/in/mc-escobar11" target="_blank"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">Linkedin</span></a></li>
-								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://scholar.google.com/citations?user=xllzBlIAAAAJ&hl" target="_blank"><i class="fab fa-google fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">Google Scholar</span></a></li>
-							</ul>
-						</div><!--//resume-footer-->
-					</article>
+   			<div class="timeline-wrap">
 
-				</div><!--//container-->
+   				<div class="timeline-block">
 
-				<footer class="footer text-center py-4">
-					<!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-					<small class="copyright text-muted">Designed with <i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				</footer>
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
 
-			</div><!--//main-wrapper-->
+	   				<div class="timeline-header">
+	   					<h3>M.Sc. in Biomedical Engineering</h3>
+	   					<p>Jan 2019 - Dec 2020</p>
+	   				</div>
 
+	   				<div class="timeline-content">
+	   					<h4>Universidad de los Andes</h4>
+	   					<p>Main focus in computer vision. Published 5 papers in peer-reviewed conferences of medical imaging. Thesis: Generative Adversarial Networks for Robust Medical Image Analysis.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>B.Sc. in Biomedical Engineering</h3>
+	   					<p>Aug 2015 - Dec 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Universidad de los Andes</h4>
+	   					<p>Graduated top of the class with the best GPA among 45 students. Minor studies in German Language and culture. </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Projects</h5>
+   			<h1>Check out what I'm working on.</h1>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/carpos.jpeg" alt="">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Bone Age Assessment</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  2018
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/SP.png" alt="">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Smart Pooling</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  2020
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/gans.png"alt="">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Image Generation</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  2019
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/lung_final.png" alt="">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Lung Cancer Diagnosis</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  2019
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/delfos.jpg" alt="">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Heart Disease Diagnosis</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  2020
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/cinfonia.png" alt="">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">CINFONIA</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  2020
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/miccai2.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Bone Age Assessment</h4>		      
+					      <p>Bone Age assessment is a critical factor for determining delayed development in children, which can be a sign of pathologies such as endocrine diseases, growth abnormalities, chromosomal, neurological and congenital disorders among others. Typically, specialists such as pediatric endocrinologists inspect visually an X-ray of the non-dominant hand of the child and compare them against examples from atlases to estimate bone age and predict adult height.</p>
+
+					      <div class="categories">Computer Aided Diagnosis</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://cinfonia.uniandes.edu.co/research?id=18" target="_blank">Learn More</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/SP.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Smart Pooling</h4>		      
+					      <p>Smart Pooling is an Artificial Intelligence (AI) system that increases the number of COVID-19 samples that can be tested with the same amount of resources.
+					      We use clinical and sociodemographic information of patients`to train an AI model to predict the probability of a sample being positive for COVID-19. With this information, we propose a novel pooled testing protocol that could improve efficiency for prevalences up to 50%. Smart Pooling is an innovative application of Machine Learning that augments the efficiency of testing regardless of the prevalence of COVID-19.</p>
+		
+
+					      <div class="categories">COVID19</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://cinfonia.uniandes.edu.co/index.php/research?id=78" target="_blank">Learn More</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/gans.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Image Generation</h4>		      
+					      <p>We create state-of-the-art methods with the use of Generative Adversarial Networks for natural images as well as medical applications.</p>
+
+					      <div class="categories">Computer Vision</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://cinfonia.uniandes.edu.co/research?id=57" target="_blank">Learn More</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/lung_final.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Lung Cancer Diagnosis</h4>		      
+					      <p>Lung cancer is the second most common type of cancer in the world. The reason for this staggering mortality rate is the near absolute absence of apparent symptoms in patients of early lung cancer. We develop novel methods for early detection of lung cancer that take into account multimodal information.</p>
+
+					      <div class="categories">Computer Aided Diagnosis</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://cinfonia.uniandes.edu.co/research?id=32" target="_blank">Learn More</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/delfos.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Heart Disease Diagnosis</h4>		      
+					      <p>Congenital heart defects (CHD) are changes in the function and shape of the heart that are developed during cardiac embryogenesis and are evident at birth. However, congenital heart defects are not detected efficiently, which is why they cause 24% of deaths in the first year of infants’ life. We propose an Artificial Intelligence algorithm that accompanies doctors in the diagnosis of congenital heart defects. This project is part of the national program DELFOS for detection of CHD in Colombia</p>
+
+					      <div class="categories">Computer Aided Diagnosis</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://cinfonia.uniandes.edu.co/research/global-health?id=58" target="_blank">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/cinfonia.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>CINFONIA</h4>		      
+					      <p>CINFONIA integrates Academic Excellence, Ethical Principles, and Responsible Research to fulfill its mission of transforming the world with Artificial Intelligence for the benefit of Humanity.</p>
+
+					      <div class="categories">Research center</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://cinfonia.uniandes.edu.co/" target="_blank">Learn More</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Activities</h5>
+   			<h1>Stuff I do besides research</h1>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-music"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Dance</h3>
+
+		            <p class="desc">Member of Salsa Uniandes (2016 - 2019) and TX1 (2020 - present). We are a student group at Uniandes dedicated to finding alternative spaces for expressing ourselves through dance. We give free workshops of Latin and urban rythms every week for the entire university and perform in various events every year. We are very commited towards the creation of a healthy environment at our university.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-book"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Volunteer</h3>  
+
+		            <p class="desc">Staff member at Con Las Manos, a project created in 2013 at Uniandes with the aim of giving back to a vulnerable community with the most powerful tool we all have: education. My role as a volunteer is to teach 5th graders basic math through a problem based learning framework and socio-emotional abilities through various interactive projects. I also work on the Operations area, we are in charge of the logistics behind everything that goes on in the organization.
+	         		</p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+
+				
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Connect With You.</h1>
+   		</div> 
+   	</div> <!-- /section-intro -->
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            Cra. 1 E No. 19A - 40<br>
+            Universidad de Los Andes<br>
+            Bogotá, Colombia
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>mc.escobar11@uniandes.edu.co	     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="fa fa-linkedin"></i>
+   			</div>
+
+   			<h5>Connect with me</h5>
+
+   			<p><a href="https://www.linkedin.com/in/mc-escobar11/" target="_blank">Linkedin profile</a>
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="https://github.com/mc-escobar11" target="_blank"><i class="fa fa-github"></i></a></li>
+			      <li><a href="https://linkedin.com/in/mc-escobar11" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			      <li><a href="https://scholar.google.com/citations?user=xllzBlIAAAAJ&hl" target="_blank"><i class="fa fa-google"></i></a></li>
+
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Kards 2016.</span> 
+		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
+
 </html>
