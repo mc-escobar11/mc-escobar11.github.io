@@ -1654,6 +1654,11 @@ header .logo a {
 	font-size: 1.5rem;
 	text-align: left;
 }
+#publications .info-list li div {
+	background-color: #FF0077;
+	color: #FF0077;
+	background: #FF0077;
+}
 #publications .info-list li span {
 	font-family: "poppins-regular", sans-serif;
 	color: #313131;
@@ -2645,7 +2650,7 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 #pink {
-	color: #FF0077;
+	background: #FF0077;
 }
 
 /*# sourceMappingURL=main.css.map */

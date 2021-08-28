@@ -776,5 +776,9 @@ img.mfp-img {
 	right: 0;
 	padding-top: 0;
 }
-
+#publications .info-list li div {
+	background-color: #FF0077;
+	color: #FF0077;
+	background: #FF0077;
+}
 /*# sourceMappingURL=vendor.css.map */
