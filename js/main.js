@@ -264,6 +264,34 @@
 
 	});
 
+/*-----------------------------------------------------*/
+/* Publication Filter
+-------------------------------------------------------*/
+$(document).ready(function () {
+    $('#filter-buttons button').on('click', function () {
+        var filter = $(this).data('filter');
+
+        // Update active button style
+        $('#filter-buttons button').removeClass('active');
+        $(this).addClass('active');
+
+        // Show or hide list items based on the filter
+        if (filter === 'all') {
+            $('.info-list li').show(); // Show all
+        } else {
+            $('.info-list li').each(function () {
+                var categories = $(this).data('category');
+                if (categories.includes(filter)) {
+                    $(this).show(); // Show matching items
+                } else {
+                    $(this).hide(); // Hide non-matching items
+                }
+            });
+        }
+    });
+});
+
+
 
  	/*----------------------------------------------------- */
   	/* Back to top

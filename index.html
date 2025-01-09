@@ -47,8 +47,7 @@
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll"  href="#about" title="">About</a></li>
 						<li><a class="smoothscroll"  href="#publications" title="">Publications</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Projects</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>				
+						<li><a class="smoothscroll"  href="#resume" title="">Experience</a></li>				
 						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>				
 					</ul>
 				</nav>    		
@@ -82,10 +81,10 @@
 
    		<div class="col-six tab-full">
 
-   			<p>I am a PhD candidate in Engineering and a researcher at the <a href="https://cinfonia.uniandes.edu.co/" target="_blank">Center for Research and Formation in Artificial Intelligence (CINFONIA)</a>  supervised by <a href="https://biomedicalcomputervision.uniandes.edu.co/" target="_blank">Prof. Pablo Arbeláez</a> at <a href="https://uniandes.edu.co/" target="_blank">Universidad de Los Andes</a> in Bogotá, Colombia. My main interests include Computer Vision and Deep Learning, as well as their role in human understanding through embodied AI. I am currently working on egocentric vision for 3D analysis and human pose estimation. When I’m not running experiments, I am usually crocheting, dancing or volunteering.</p>
+   			<p>I am a PhD candidate in Engineering and a researcher at the <a href="https://cinfonia.uniandes.edu.co/" target="_blank">Center for Research and Formation in Artificial Intelligence (CINFONIA)</a>  supervised by <a href="https://biomedicalcomputervision.uniandes.edu.co/" target="_blank">Prof. Pablo Arbeláez</a>. I previously did a Research Internship at Google, working on pose estimation methods for <a href="https://starline.google" target="_blank">Project Starline</a>. My main interests include Computer Vision and Deep Learning, as well as their role in human understanding through embodied AI. When I’m not running experiments, I am usually crocheting, dancing or volunteering.</p>
 			<a href="https://www.instagram.com/mamzellebullephoto/">Photo credits: Nidhal and Marion Fregeac.</a>
    			<center><a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
-   			<a href="images/Resume_ME.pdf" taget="_blank" title="Download Resume" class="button button-primary">Download Resume</a>
+   			<a href="images/resume_MCE.pdf" taget="_blank" title="Download Resume" class="button button-primary">Download Resume</a>
 			<br>
 			<a href="https://github.com/mc-escobar11" target="_blank"><i class="fa fa-github"> </i></a>
 			<a href="https://linkedin.com/in/mc-escobar11" target="_blank"><i class="fa fa-linkedin"> </i></a>
@@ -100,404 +99,165 @@
 
    </section> <!-- /process-->    
 
-
    <!-- publications Section
    ================================================== -->
-	<section id="publications" class="grey-section">
+<section id="publications" class="grey-section">
+    <div class="row section-intro">
+        <div class="col-twelve">
+            <h5>Publications & Awards</h5>
+            <i class="fa fa-graduation-cap"></i>
+            <h3>Publications</h3>
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+            <!-- Filter Buttons : Egocentric, Pose, Medical, Generation, Benchmark -->
+            <div id="filter-buttons">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="pose">Pose</button>
+				<button data-filter="egocentric">Egocentric</button>
+                <button data-filter="medical">Medical</button>
+                <button data-filter="generation">Generation</button>
+				<button data-filter="benchmark">Benchmark</button>
+                
+            </div>
+			
+            <!-- Publications List -->
+            <ul class="info-list">
+				<span>*Denotes equal contribution.</span>
+				<li data-category="egocentric pose">
+                    <strong>EgoCast: Forecasting Egocentric Human Pose in the Wild.</strong><br>
+                    <span><strong>M. Escobar</strong>, J. Puentes, C. Forigua, J. Pont-Tuset, KK. Maninis, P. Arbeláez.</span><br>
+                    <span>WACV, 2025.</span>
+                    <span><a href="https://bcv-uniandes.github.io/egocast-wp/" target="_blank">Project page</a> / <a href="https://arxiv.org/abs/2412.02903" target="_blank">paper</a></span>
+                </li>
+                <li data-category="egocentric benchmark pose">
+                    <strong>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives.</strong><br>
+                    <span>K. Grauman et al.</span><br>
+                    <span>CVPR, 2024 (ORAL PRESENTATION).</span>
+                    <span><a href="http://ego-exo4d-data.org/#challenges" target="_blank">Project page</a> / <a href="https://ego-exo4d-data.org/paper/ego-exo4d.pdf" target="_blank">paper</a></span>
+                </li>
+                <li data-category="pose generation">
+                    <strong>BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis.</strong><br>
+                    <span>A. Castillo*,</span><strong> M. Escobar*</strong><span>, G. Jeanneret, A. Pumarola, P. Arbeláez, A. Thabet, A. Sanakoyeu</span><br>
+                    <span>Computer Vision for Metaverse @ ICCV, 2023.</span>
+                    <span><a href="https://bcv-uniandes.github.io/bodiffusion-wp/" target="_blank">Project page</a> / <a href="https://arxiv.org/abs/2304.11118" target="_blank">paper</a></span>
+                </li>
 
-   			<h5>Publications & Awards</h5>
-   			
-	   		<i class="fa fa-graduation-cap"></i><h3>Publications</h3>
-
-	   			<ul class="info-list">
-	   			<span>*Denotes equal contribution.</span>
-				<li style="background-color:#ff007723">
-					<strong>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives.</strong><br>
-					<span>K. Grauman et al.</span>
-					<span> Arxiv, 2023. </span><br>
-					<span><a href=http://ego-exo4d-data.org/#challenges target="_blank">Webpage</a> / <a href=https://ego-exo4d-data.org/paper/ego-exo4d.pdf target="_blank">paper</a> </span>
-				</li>
-				<li style="background-color:#ff007723">
-					<strong>BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis.</strong><br>
-					<span>A. Castillo*,</span><strong> M. Escobar*</strong><span>, G. Jeanneret, A. Pumarola, P. Arbeláez, A. Thabet, A. Sanakoyeu</span><br>
-					<span> Computer Vision for Metaverse @ ICCV, 2023. </span><br>
-					<span><a href=https://bcv-uniandes.github.io/bodiffusion-wp/ target="_blank">Project code</a> / <a href=https://arxiv.org/abs/2304.11118 target="_blank">paper</a> </span>
-				</li>
-
-				<li>
+				<li data-category="egocentric">
 					<strong>EgoCOL: Egocentric Camera pose estimation for Open-world 3D object Localization.</strong><br>
 					<span>C. Forigua,</span> <strong> M. Escobar</strong><span>, J. Pont-Tuset, KK. Maninis, P. Arbeláez</span><br>
-					<span> Ego4D challenge @ CVPR, 2023 </span><br>
+					<span> Ego4D challenge @ CVPR, 2023 </span>
 					<span><a href=https://github.com/BCV-Uniandes/EgoCOL target="_blank">Project page</a> / <a href=https://arxiv.org/abs/2306.16606 target="_blank">paper</a> </span>
 				</li>
-   				<li>
+				<li data-category="medical">
+					<strong>FeST: Learning Spatio-Temporal Priors for Fetal Brain MRI Segmentation.</strong><br>
+					<span>MF. Peñuela, L. Vargas, S. Usma, <strong>M. Escobar</strong>, A. Castillo, P. Arbeláez<br>
+					<span> ISBI, 2023 </span>
+					<span> <a href=https://ieeexplore.ieee.org/abstract/document/10230531 target="_blank">paper</a> </span>
+				</li>
+   				<li data-category="medical">
 					<strong>SuperFormer: Volumetric Transformer Architectures for MRI Super-Resolution.</strong><br>
 					<span>C. Forigua,</span> <strong> M. Escobar</strong><span>, P. Arbeláez</span><br>
-					<span> SASHIMI @ MICCAI, 2022 </span><br>
+					<span> SASHIMI @ MICCAI, 2022 </span>
 					<span><a href=https://github.com/BCV-Uniandes/SuperFormer target="_blank">Project page</a> / <a href=https://link.springer.com/chapter/10.1007/978-3-031-16980-9_13 target="_blank">paper</a> </span>
 				</li>
-				<li >
+				<li data-category="egocentric">
 					<strong>Video Swin Transformers for Egocentric Video Understanding @ Ego4D Challenges 2022.</strong><br>
 					<strong> M. Escobar*</strong><span>, L. Daza* , C. González , J. Pont-Tuset, P. Arbeláez</span><br>
-					<span> Ego4D challenges @ CVPR, 2022 </span><br>
+					<span> Ego4D challenges @ CVPR, 2022 </span>
 					<span><a href=https://github.com/BCV-Uniandes/PNR_OSCC target="_blank">Project code</a> / <a href=https://arxiv.org/pdf/2207.11329.pdf target="_blank">paper</a> </span>
 				</li>
-   				<li>
+   				<li data-category="medical">
 					<strong>Smart pooling: AI-powered COVID-19 informative group testing.</strong><br>
 					<strong> M. Escobar</strong><span>, G. Jeanneret , L. Bravo-Sánchez , A. Castillo, C. Gómez , D. Valderrama, M. F. Roa, J. Martínez, J. Madrid-Wolff , M. Cepeda, M. Guevara-Suarez , O. L. Sarmiento , A. L. Medaglia , M. Forero-Shelton , M. Velasco, J. M. Pedraza-Leal, S. Restrepo, P. Arbeláez</span><br>
-					<span> Scientific Reports, 2022 </span><br>
+					<span> Scientific Reports, 2022 </span>
 					<span><a href=https://cinfonia.uniandes.edu.co/responsible-research/smart-pooling/ target="_blank">Project page</a> / <a href=https://www.nature.com/articles/s41598-022-10128-9 target="_blank">paper</a> </span>
 				</li>
-					   <li>
-							  <strong >Generalized Real-World Super-Resolution through Adversarial Robustness.</strong><br>
-							  <span>A. Castillo*,</span> <strong> M. Escobar*</strong><span>, A. Romero, R. Timofte, L. Van Gool, P. Arbeláez</span><br>
-							  <span> AIM @ ICCVW, 2021. </span><br>
-						   <span><a href=https://cinfonia.uniandes.edu.co/responsible-research/image-generation/ target="_blank">Project page</a> / <a href=https://arxiv.org/abs/2108.11505 target="_blank">paper</a> </span>
-						  </li>
+				<li data-category="medical">
+					<strong>SAMA: Spatially-Aware Multimodal Network with Attention For Early Lung Cancer Diagnosis.</strong><br>
+					<span>M. Roa, L. Daza, <strong>M. Escobar</strong>, A. Castillo, P. Arbeláez<br>
+					<span> MLCDS @ MICCAI, 2021 </span>
+					<span> <a href=https://link.springer.com/chapter/10.1007/978-3-030-89847-2_5 target="_blank">paper</a> </span>
+				</li>
+				<li data-category="generation">
+					<strong >Generalized Real-World Super-Resolution through Adversarial Robustness.</strong><br>
+					<span>A. Castillo*,</span> <strong> M. Escobar*</strong><span>, A. Romero, R. Timofte, L. Van Gool, P. Arbeláez</span><br>
+					<span> AIM @ ICCVW, 2021. </span>
+					<span><a href=https://cinfonia.uniandes.edu.co/responsible-research/image-generation/ target="_blank">Project page</a> / <a href=https://arxiv.org/abs/2108.11505 target="_blank">paper</a> </span>
+					</li>
 
-   				<li >
+   				<li data-category="medical benchmark">
    					<strong>SIMBA: Specific Identity Markers for Bone Age Assessment.</strong><br>
    					<span>C. González*, </span><strong> M. Escobar*</strong><span>, L. Daza, F. Torres, G. Triana, P. Arbeláez</span><br>
-   					<strong>MICCAI, 2020 </strong><br>
+   					<span>MICCAI, 2020 </span>
    					<span><a href=https://cinfonia.uniandes.edu.co/publications/simba-specific-identity-markers-for-bone-age-assessment/ target="_blank">Project page</a> / <a href=https://arxiv.org/pdf/2007.05454.pdf target="_blank">paper</a> </span>
    				</li>
-   				<li>
+   				<li data-category="medical benchmark">
    					<strong>LUCAS: LUng CAncer Screening with Multimodal Biomarkers.</strong><br>
    					<span> L. Daza, A. Castillo, </span><strong> M. Escobar</strong><span>, P. Arbeláez</span><br>
-   					<span> MLCDS @ MICCAI, 2020. </span><br>
+   					<span> MLCDS @ MICCAI, 2020. </span>
    					<span><a href=https://cinfonia.uniandes.edu.co/responsible-research/lung-cancer-diagnosis/ target="_blank">Project page</a> / <a href=https://cinfonia.uniandes.edu.co/wp-content/uploads/2021/06/MLCDS_2020_7_LUNG.pdf?x52804 target="_blank">paper</a> </span>
    				</li>
-   				<li>
+   				<li data-category="medical generation">
    					<strong>UltraGAN: Ultrasound Enhancement Through Adversarial Generation.</strong><br>
    					<strong> M. Escobar*</strong><span>, A. Castillo*, A. Romero, P. Arbeláez</span><br>
-   					<span> SASHIMI @ MICCAI, 2020. </span><br>
+   					<span> SASHIMI @ MICCAI, 2020. </span>
    					<span><a href=https://cinfonia.uniandes.edu.co/responsible-research/pediatric-heart-disease-diagnosis/ target="_blank">Project page</a> / <a href=https://cinfonia.uniandes.edu.co/wp-content/uploads/2021/06/SASHIMI_2020_UltraGAN.pdf?x52804 target="_blank">paper</a> </span>
    				</li>
-   				<li> 
+   				<li data-category="medical benchmark"> 
    					<strong>Hand Pose Estimation for Pediatric Bone Age Assessment.</strong><br>
    					<strong> M. Escobar*</strong><span>, C. González*, F. Torres, L. Daza, G. Triana, P. Arbeláez</span><br>
-   					<strong> MICCAI, 2019 (ORAL PRESENTATION)</strong> <br>
+   					<span> MICCAI, 2019 (ORAL PRESENTATION)</span> 
    					<span><a href=https://biomedicalcomputervision.uniandes.edu.co/index.php/research?id=36 target="_blank">Project page</a> / <a href=https://cinfonia.uniandes.edu.co/wp-content/uploads/2021/06/Hand_Pose_Estimation_for_Pediatric_Bone_Age_Assessment.pdf?x52804 target="_blank">paper</a> </span>
    				</li>
-   				<li>
+   				<li data-category="medical">
    					<strong>An empirical study on Global Bone Age Assessment.</strong><br>
    					<span>F Torres, C. González, </span><strong> M. Escobar</strong><span>, L. Daza, G. Triana, P. Arbeláez</span><br>
-   					<span> SIPAIM, 2019.</span><br>
+   					<span> SIPAIM, 2019.</span>
    					<span><a href=https://cinfonia.uniandes.edu.co/responsible-research/bone-age-assessment/ target="_blank">Project page</a> / <a href=http://marr.uniandes.edu.co/baar/static/documents/an-empirical-study-on-global-bone-age-assessment.pdf target="_blank">paper</a> </span>
-   				</li>   	
-
-   			</ul> <!-- /info-list -->
-
-   			<i class="fa fa-trophy"></i><h3>Awards</h3>
-   			<ul class="info-list">
+   				</li>  
+            </ul>
+        </div>
+		<div class="col-twelve">
+			<i class="fa fa-trophy"></i><h3>Awards</h3>
+			<ul class="info-list">
+			 <li>
+				 <strong>2nd place in Visual Queries 3D Localization (2023).</strong><br>
+				 <span>Ego4D challenges @ CVPR </span> 
+			 </li>
+			 <li>
+				 <strong>2nd place in PNR Temporal Localization (2022).</strong><br>
+				 <span>Ego4D challenges @ CVPR </span> 
+			 </li>
+			 <li>
+				 <strong>3rd place in Object State Change Classification (2022).</strong><br>
+				 <span>Ego4D challenges @ CVPR </span> 
+			 </li>
 				<li>
-					<strong>2nd place in Visual Queries 3D Localization (2023).</strong><br>
-					<span>Ego4D challenges @ CVPR </span> 
+					<strong>Best GPA among 45 graduating Biomedical Engineering Students (2019).</strong><br>
+					<span>Universidad de Los Andes</span> 
 				</li>
 				<li>
-					<strong>2nd place in PNR Temporal Localization (2022).</strong><br>
-					<span>Ego4D challenges @ CVPR </span> 
+					<strong>Member of the Colombian Young Talent Program (2019).</strong><br>
+					<span>Colfuturo</span> 
 				</li>
 				<li>
-					<strong>3rd place in Object State Change Classification (2022).</strong><br>
-					<span>Ego4D challenges @ CVPR </span> 
+					<strong>First place in the graduate national exams for Biomedical Engineering. Seventh place nationwide (2018).</strong><br>
+					<span>Ministerio de Educación, Colombia</span> 
 				</li>
-   				<li>
-   					<strong>Best GPA among 45 graduating Biomedical Engineering Students (2019).</strong><br>
-   					<span>Universidad de Los Andes</span> 
-   				</li>
-   				<li>
-   					<strong>Member of the Colombian Talent Program (Programa Semillero de Talentos) (2019).</strong><br>
-   					<span>Colfuturo</span> 
-   				</li>
-   				<li>
-   					<strong>First place in the graduate national exams for Biomedical Engineering. Seventh place nationwide (2018).</strong><br>
-   					<span>Ministerio de Educación, Colombia</span> 
-   				</li>
-   				<li>
-   					<strong>Coulter College Design Scholar (2018).</strong><br>
-   					<span>Biomedical Engineering Society, Medtronic</span> 
-   				</li>
+				<li>
+					<strong>Coulter College Design Scholar (2018).</strong><br>
+					<span>Biomedical Engineering Society, Medtronic</span> 
+				</li>
 
-   			</ul>
-   		</div> 
-
-   	</div> <!-- /section-intro--> 
-
-   	
-		
-	</section> <!-- /features -->
-
-
-	<!-- Portfolio Section
-   ================================================== -->
-	<section id="portfolio">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Projects</h5>
-   			<h1>Check out what I'm working on.</h1>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-	            <div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="images/portfolio/ego.png" alt="">
-					   <a href="#modal-06" class="overlay">
-						  <div class="folio-item-table">
-							  <div class="folio-item-cell">
-								  <h3 class="folio-title">Egocentric vision</h3>	     					    
-										  <span class="folio-types">
-											   2022
-										</span>		     		
-									 </div>	                      	
-						  </div>                    
-					   </a>
-					</div>
-					 </div> <!-- /folio-item -->  
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/gans.png"alt="">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Image Generation</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  2019
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/carpos.jpeg" alt="">
-						   <a href="#modal-01" class="overlay">	                  	           
-							  <div class="folio-item-table">
-								  <div class="folio-item-cell">
-											 <h3 class="folio-title">Bone Age Assessment</h3>	     					    
-											   <span class="folio-types">
-												   2018
-											 </span>
-										 </div>	                      	
-							  </div>                    
-						   </a>
-						</div>	               
-						 </div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/SP.png" alt="">
-	               	<a href="#modal-02" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Smart Pooling</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  2020
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/lung_final.png" alt="">
-	                  <a href="#modal-04" class="overlay">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Lung Cancer Diagnosis</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  2019
-		     					      </span>		     		
-		     					   </div>  	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->     
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/delfos.jpg" alt="">
-	                  <a href="#modal-05" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Heart Disease Diagnosis</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  2020
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
- 
-
-	            <!-- modal popups - begin
-	            ============================================================= -->
-	            <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/miccai2.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Bone Age Assessment</h4>		      
-					      <p>Bone Age assessment is a critical factor for determining delayed development in children, which can be a sign of pathologies such as endocrine diseases, growth abnormalities, chromosomal, neurological and congenital disorders among others. Typically, specialists such as pediatric endocrinologists inspect visually an X-ray of the non-dominant hand of the child and compare them against examples from atlases to estimate bone age and predict adult height.</p>
-
-					      <div class="categories">Computer Aided Diagnosis</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="hhttps://cinfonia.uniandes.edu.co/responsible-research/bone-age-assessment/" target="_blank">Learn More</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-01 -->
-
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/SP.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Smart Pooling</h4>		      
-					      <p>Smart Pooling is an Artificial Intelligence (AI) system that increases the number of COVID-19 samples that can be tested with the same amount of resources.
-					      We use clinical and sociodemographic information of patients`to train an AI model to predict the probability of a sample being positive for COVID-19. With this information, we propose a novel pooled testing protocol that could improve efficiency for prevalences up to 50%. Smart Pooling is an innovative application of Machine Learning that augments the efficiency of testing regardless of the prevalence of COVID-19.</p>
-		
-
-					      <div class="categories">COVID19</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://cinfonia.uniandes.edu.co/responsible-research/smart-pooling/" target="_blank">Learn More</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-02 -->
-
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/rsr.jpeg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Image Generation</h4>		      
-					      <p>We create state-of-the-art methods with the use of Generative Adversarial Networks for natural images as well as medical applications.</p>
-
-					      <div class="categories">Computer Vision</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://cinfonia.uniandes.edu.co/responsible-research/image-generation/" target="_blank">Learn More</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-03 -->
-
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/lung_final.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Lung Cancer Diagnosis</h4>		      
-					      <p>Lung cancer is the second most common type of cancer in the world. The reason for this staggering mortality rate is the near absolute absence of apparent symptoms in patients of early lung cancer. We develop novel methods for early detection of lung cancer that take into account multimodal information.</p>
-
-					      <div class="categories">Computer Aided Diagnosis</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://cinfonia.uniandes.edu.co/responsible-research/lung-cancer-diagnosis/" target="_blank">Learn More</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-04 -->
-
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/delfos.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Heart Disease Diagnosis</h4>		      
-					      <p>Congenital heart defects (CHD) are changes in the function and shape of the heart that are developed during cardiac embryogenesis and are evident at birth. However, congenital heart defects are not detected efficiently, which is why they cause 24% of deaths in the first year of infants’ life. We propose an Artificial Intelligence algorithm that accompanies doctors in the diagnosis of congenital heart defects. This project is part of the national program DELFOS for detection of CHD in Colombia</p>
-
-					      <div class="categories">Computer Aided Diagnosis</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://cinfonia.uniandes.edu.co/responsible-research/pediatric-heart-disease-diagnosis/" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-05 -->
-
-				   <div id="modal-06" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/ego.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Egocentric Vision</h4>		      
-					      <p>Egocentric vision is the base of AR and VR applications since it focuses on understanding the actions of humans from their point-of-view. I work in 3D understanding for egocentric videos as well as in humans interactions with objects. </p>
-
-					      <div class="categories">Embodied AI</div>			               
-					   </div>
-
-			         <div class="link-box">
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-06 -->
-
-
-				   <!-- modal popups - end
-	            ============================================================= -->
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
+			</ul>
+		</div> 
+    </div>
+</section>
 	
 	   <!-- resume Section
    ================================================== -->
-	<section id="resume" class="grey-section">
+	<section id="resume">
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Resume</h5>
-
-   			<p class="lead">Here is my work experience and education</p>
-
-   		</div>   		
+		<div class="row section-intro">		
    	</div> <!-- /section-intro--> 
 
    	<div class="row resume-timeline">
@@ -512,15 +272,36 @@
 
    			<div class="timeline-wrap">
 
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Research Intern</h3>
+						<p>May 2024 - September 2024</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Google</h4>
+									 <p>Implemented machine learning models for pose estimation in Project Starline, a novel telepresence system.
+										 Optimized pose estimation algorithms using JAX and FLAX on Google’s infrastructure for scalable deployment and evaluation.
+										 Designed and conducted performance evaluations, driving improvements in accuracy and system robustness.
+										 Collaborated with multidisciplinary teams and presented findings to technical and non-technical stakeholders.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
    				<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
+	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
 	   					<h3>Researcher</h3>
-	   					<p>July 2018 - Present</p>
+	   					<p>July 2018 - December 2024</p>
 	   				</div>
 
 	   				<div class="timeline-content">
@@ -536,7 +317,7 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
+	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -555,7 +336,7 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
+	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -595,10 +376,30 @@
 
    			<div class="timeline-wrap">
 
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>PhD. in Engineering</h3>
+						<p>Jan 2021 - Dec 2024</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Universidad de los Andes</h4>
+						<p>Main focus in Computer Vision. </br>
+					Authored papers in top-tier computer vision conferences.</br>
+					 Thesis: 3D Human Pose Estimation from Egocentric Inputs.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
    				<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -608,7 +409,9 @@
 
 	   				<div class="timeline-content">
 	   					<h4>Universidad de los Andes</h4>
-	   					<p>Main focus in computer vision. Published 5 papers in peer-reviewed conferences of medical imaging. Thesis: Generative Adversarial Networks for Robust Medical Image Analysis.</p>
+	   					<p>Main focus in Computer Vision. </br>
+						Published 5 papers in peer-reviewed conferences of medical imaging.</br>
+						Thesis: Generative Adversarial Networks for Robust Medical Image Analysis.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -616,7 +419,7 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -640,7 +443,7 @@
 	</section> <!-- /features -->
    <!-- contact
    ================================================== -->
-	<section id="contact" >
+	<section id="contact" class="grey-section">
 
 		<div class="row section-intro">
    		<div class="col-twelve">
@@ -651,23 +454,8 @@
    	</div> <!-- /section-intro -->
    	<div class="row contact-info">
 
+
    		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
-
-   			<h5 >Where to find me</h5>
-
-   			<p style="color: #f0ffff;">
-            Cra. 1 E No. 19A - 40<br>
-            Universidad de Los Andes<br>
-            Bogotá, Colombia
-            </p>
-
-   		</div>
-
-   		<div class="col-four tab-full collapse">
 
    			<div class="icon">
    				<i class="icon-mail"></i>
@@ -675,8 +463,7 @@
 
    			<h5>Email Me At</h5>
 
-   			<p>mc.escobar11@uniandes.edu.co	     
-			   </p>
+   			<p>mc.escobar11@uniandes.edu.co</p>
 
    		</div>
 
@@ -688,7 +475,7 @@
 
    			<h5>Connect with me</h5>
 
-   			<p style="color: #f0ffff;"><a style="color: #f0ffff;" href="https://www.linkedin.com/in/mc-escobar11/" target="_blank">Linkedin profile</a>
+   			<p ><a href="https://www.linkedin.com/in/mc-escobar11/" target="_blank">Linkedin profile</a>
 			   </p>
 
    		</div>
@@ -702,7 +489,7 @@
    ================================================== -->
 
    <footer>
-     	<div class="row">
+     	<div class="row" >
 
      		<div class="col-six tab-full pull-right social">
 

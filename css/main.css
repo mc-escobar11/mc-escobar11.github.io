@@ -1666,6 +1666,62 @@ header .logo a {
 	text-align: left;
 }
 
+/** 
+ * ===================================================================
+ * 11.5. publications - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ #filter-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Add spacing between buttons */
+    margin-bottom: 20px; /* Optional spacing below */
+}
+
+#filter-buttons button {
+    background-color: #e0e0e0; /* Light gray background */
+    color: black; /* Black text */
+    border: none; /* Remove default border */
+    padding: 5px 15px; /* Smaller padding for compact buttons */
+    margin: 0; /* Remove extra margins */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 14px; /* Smaller font size */
+    font-weight: regular; /* Bold text for visibility */
+    text-transform: uppercase; /* Keep text uppercase */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    display: inline-block; /* Ensure buttons are inline */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+#filter-buttons button.active {
+    background-color: #d6d6d6; /* Slightly darker gray for active button */
+    color: black; /* Black text */
+}
+
+#filter-buttons button:hover {
+    background-color: #cfcfcf; /* Darker shade on hover */
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+
+/* Publication List */
+#publications-list {
+    list-style: none;
+    padding: 0;
+}
+
+#publications-list li {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#publications-list li.visible {
+    display: block;
+}
 
 
 /** 
@@ -1675,6 +1731,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #resume {
+	background: #FFFFFF;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
@@ -2304,12 +2361,11 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #contact {
-	background: #151515;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
 #contact .section-intro h1 {
-	color: white;
+	color: black;
 }
 #contact .section-intro h5 {
 	color: #FF0077;
@@ -2467,7 +2523,7 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
 	text-align: center;
-	color: #FFFFFF;
+	color: #000000;
 }
 .contact-info .collapse {
 	padding: 0;
@@ -2477,7 +2533,7 @@ header .logo a {
 }
 .contact-info .icon i {
 	font-size: 4.2rem;
-	color: #FFFFFF;
+	color: #FF0077;
 }
 .contact-info h5 {
 	color: #FF0077;
@@ -2546,12 +2602,13 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 footer {
+	background: #ebebeb;
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
 }
 footer a, footer a:visited {
-	color: #FFFFFF;
+	color: #FF0077;
 }
 footer a:hover, footer a:focus {
 	color: #FF0077;
@@ -2576,7 +2633,7 @@ footer .footer-social li {
 	padding: 0;
 }
 footer .footer-social li a {
-	color: #FFFFFF;
+	color: #FF0077;
 }
 footer .copyright span {
 	display: inline-block;
